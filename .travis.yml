@@ -6,6 +6,8 @@ python:
   - 3.3
   - 3.4
   - pypy
+services:
+  - memcached
 install: python setup.py install
 before_script: pip install nose
 script: nosetests
